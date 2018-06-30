@@ -32,7 +32,7 @@ const StyledView = styled.div`
  `;
 
  const ImportantText = styled.span`
-    color: #2061c9;
+    font-weight: bold;
     font-style: italic;
  `;
 
