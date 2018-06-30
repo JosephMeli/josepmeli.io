@@ -8,14 +8,19 @@ import linkedin_logo from '../assets/linkedIn.png';
 
 const StyledContainer = styled.div`
   padding-top: 15px;
-  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Styledlogo = styled.img`
-  height: 60px;
+  height: 30px;
   width: auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
+    &:hover{
+  border-bottom: solid 2px blue;
+  animation: dropdown 0.2s forwards;
+}
 `;
 
 class Social extends Component {
