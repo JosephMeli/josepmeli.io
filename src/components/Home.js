@@ -19,6 +19,9 @@ const StyledView = styled.div`
   border-radius: 1%;
   border: none;
   animation: 0.5s forwards;
+  @media (max-width: 700px) {
+    width: 75%;
+  }
 `;
 
 const StyledHeader = styled.h1`
@@ -28,6 +31,13 @@ const StyledHeader = styled.h1`
   font-weight: 500;
   letter-spacing: 2px;
   line-height: 200%;
+  @media (max-width: 700px) {
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 130%;
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
 `;
 
 const ImportantText = styled.span`
