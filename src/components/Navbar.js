@@ -1,8 +1,8 @@
 //Dependencies
-import React, { Component } from 'react';
-import styled, {keyframes} from 'styled-components';
-import { NavLink } from 'react-router-dom';
-import { fadeIn } from 'react-animations';
+import React, { Component } from "react";
+import styled, { keyframes } from "styled-components";
+import { NavLink } from "react-router-dom";
+import { fadeIn } from "react-animations";
 
 const fader = keyframes`${fadeIn}`;
 
@@ -28,45 +28,41 @@ const StyledText = styled.h2`
   margin-right: 10px;
 `;
 const StyledsubText = styled.h3`
-padding-right: 15px;
-display: inline;
+  padding-right: 15px;
+  display: inline;
   color: Black;
-  &:hover{
-  border-bottom: solid 2px lightblue;
-}
-
+  &:hover {
+    border-bottom: solid 2px blue;
+  }
 `;
-const styledName = styled.div`
+const StyledName = styled.div`
   color: Black;
   letter-spacing: 3 px;
-
 `;
 
-
 class Navbar extends Component {
-
   render() {
     return (
-  <React.Fragment>
-    <StyledContainer>
-      <div style={{display:'flex', 'align-items':'center' }}>
-       <NavLink style={{ textDecoration: 'none'}} to="/">
-        <StyledText>JM</StyledText>
-      </NavLink>
-      <Div>
-      <styledName>JOSEPH MELI</styledName>
-    </Div>
-    </div>
-    <StyledsubContainer>
-      <NavLink style={{ textDecoration: 'none' }} to="/code">
-        <StyledsubText>Development</StyledsubText>
-      </NavLink>
-      <NavLink style={{ textDecoration: 'none' }} to="/contact">
-        <StyledsubText>Contact</StyledsubText>
-      </NavLink>
-    </StyledsubContainer>
-  </StyledContainer>
-  </React.Fragment>
+      <React.Fragment>
+        <StyledContainer>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <NavLink style={{ textDecoration: "none" }} to="/">
+              <StyledText>JM</StyledText>
+            </NavLink>
+            <Div>
+              <StyledName>JOSEPH MELI</StyledName>
+            </Div>
+          </div>
+          <StyledsubContainer>
+            <NavLink style={{ textDecoration: "none" }} to="/code">
+              <StyledsubText>Development</StyledsubText>
+            </NavLink>
+            <NavLink style={{ textDecoration: "none" }} to="/contact">
+              <StyledsubText>Contact</StyledsubText>
+            </NavLink>
+          </StyledsubContainer>
+        </StyledContainer>
+      </React.Fragment>
     );
   }
 }
