@@ -17,7 +17,7 @@ const StyledView = styled.div`
   }
 `;
 const StyledText = styled.div`
-  color: #2061c9;
+  color: #68b6e3;
   width: 100%;
   font-weight: bold;
   font-size: 64px;
