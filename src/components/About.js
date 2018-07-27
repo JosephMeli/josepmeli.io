@@ -185,7 +185,7 @@ class About extends React.Component {
                   href={resumeData.work.map(a => a.website)}
                   target="_blank"
                 >
-                  Nerve Website
+                  {resumeData.work.map(a => a.website)}
                 </StyledLink>
               </Item>
               <Item>
