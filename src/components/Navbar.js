@@ -12,8 +12,8 @@ const Div = styled.div`
 
 const StyledContainer = styled.div`
   display: flex;
+  flex-wrap: flex;
   justify-content: space-around;
-  padding-top: 20px;
 `;
 const StyledsubContainer = styled.div`
   padding-top: 20px;
@@ -22,10 +22,8 @@ const StyledsubContainer = styled.div`
 const StyledText = styled.h2`
   color: White;
   background-color: #2061c9;
-  padding: 5px;
   letter-spacing: 2px;
   border-radius: 4%;
-  margin-right: 10px;
   @media (max-width: 700px) {
     display: none;
   }
@@ -33,17 +31,23 @@ const StyledText = styled.h2`
 const StyledMobileText = styled.h3`
   color: White;
   background-color: #2061c9;
-  padding: 5px;
+
   letter-spacing: 2px;
   border-radius: 4%;
-  margin-right: 10px;
+
+  width: 100%;
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+const StyledMobileMenu = styled.div`
   @media (min-width: 700px) {
     display: none;
   }
 `;
 const StyledsubText = styled.h3`
-  padding-right: 15px;
   display: inline;
+  padding-right: 15px;
   color: #555;
   &:hover {
     border-bottom: solid 2px #2061c9;
@@ -70,6 +74,7 @@ class Navbar extends Component {
             <StyledName>JOSEPH MELI</StyledName>
           </Div>
         </div>
+        <StyledMobileMenu />
         <StyledsubContainer>
           <NavLink style={{ textDecoration: "none" }} to="/code">
             <StyledsubText>Projects</StyledsubText>

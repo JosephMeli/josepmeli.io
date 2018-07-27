@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import ProPic from "../assets/Profile_Pic.JPG";
+import { resumeData } from "../resume";
 
 const StyledView = styled.div`
   background-color: white;
@@ -9,7 +10,6 @@ const StyledView = styled.div`
   margin-top: 40px;
   width: 65%;
   max-width: 500px;
-  border-radius: 1%;
   border: none;
   animation: 0.5s forwards;
   @media (max-width: 700px) {
@@ -17,32 +17,12 @@ const StyledView = styled.div`
   }
 `;
 const StyledCard = styled.div`
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 250;
-  height: 150;
-  margin: 20px;
-  padding: 15px;
-  background: #ffffff;
-  opacity: 1;
-  border-radius: 5px;
-  border: 2px solid #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 8px;
+  font-size: 62.5%;
+  font-family: Montserrat;
+  color: #333333;
 `;
-const StyledText = styled.div`
-  padding: 30px;
-  color: #2061c9;
-  width: 100%;
-  font-weight: bold;
-  font-size: 64px;
-  @media (max-width: 700px) {
-    font-size: 32px;
-  }
-`;
-
 const StyledImage = styled.img`
   height: 150px;
   width: auto;
@@ -53,24 +33,37 @@ const StyledImage = styled.img`
   }
 `;
 const StyledDescription = styled.p`
-  color: #555;
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 `;
 
-const StyledHeader = styled.h1`
+const StyledHeader = styled.div`
   text-align: center;
-  margin-top: 17px;
-  color: #555;
-  font-weight: 500;
-  letter-spacing: 2px;
-  line-height: 200%;
-  @media (max-width: 700px) {
-    font-weight: 100;
-    letter-spacing: 1px;
-    line-height: 130%;
-    margin-top: 10px;
-    margin-bottom: auto;
-  }
+  font-size: 2em;
+  margin-top: 1em;
+  margin-left: 5%;
+  margin-right: 5%;
 `;
+
+const StyledTitleHeader = styled.h1`
+  font-size: 3em;
+  margin-bottom: 0;
+`;
+const StyledsubHeader = styled.h3`
+  margin-top: 0;
+  margin-bottom: 1em;
+`;
+const StyledAreaHeader = styled.div`
+  font-weight: bold;
+`;
+const StyledContactSection = styled.div``;
+
+const StyledContactHeader = styled.div``;
 
 const StyledLink = styled.a`
   padding: 10px;
@@ -89,18 +82,17 @@ class Contact extends React.Component {
     return (
       <StyledView>
         <StyledCard>
-          <StyledText>Who am I?</StyledText>
-
+          <StyledHeader>
+            <StyledTitleHeader>{resumeData.basics.name}</StyledTitleHeader>
+            <StyledsubHeader>{resumeData.basics.label}</StyledsubHeader>
+            <StyledAreaHeader>
+              {resumeData.basics.location.city},{
+                resumeData.basics.location.region
+              },{resumeData.basics.location.countryCode}
+            </StyledAreaHeader>
+          </StyledHeader>
           <StyledImage src={ProPic} alt="Profile" />
-          <StyledDescription>
-            Passionate Software Engineer professional with a track record of
-            leveraging technology to increase bottom line organizational
-            performance. Comprehensive understanding of C and Python programming
-            languages along with experience building websites. Currently
-            completing a Bachelor of Science (B.S.) in Computer Science.
-            Exceptional learner with outstanding team leadership, presentation,
-            and communication skills.
-          </StyledDescription>
+          <StyledDescription>{resumeData.basics.summary}</StyledDescription>
 
           <StyledHeader> Email Me: </StyledHeader>
           <StyledLink href="joemeli631@gmail.com">
