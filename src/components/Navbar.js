@@ -46,11 +46,11 @@ const StyledsubText = styled.h3`
   display: inline;
   color: #555;
   &:hover {
-    border-bottom: solid 2px blue;
+    border-bottom: solid 2px #2061c9;
   }
 `;
 const StyledName = styled.div`
-  color: Black;
+  color: #555;
   letter-spacing: 3 px;
   @media (max-width: 700px) {
     display: none;
@@ -60,27 +60,25 @@ const StyledName = styled.div`
 class Navbar extends Component {
   render() {
     return (
-      <React.Fragment>
-        <StyledContainer>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <NavLink style={{ textDecoration: "none" }} to="/">
-              <StyledText>JM</StyledText>
-              <StyledMobileText>Joseph Meli</StyledMobileText>
-            </NavLink>
-            <Div>
-              <StyledName>JOSEPH MELI</StyledName>
-            </Div>
-          </div>
-          <StyledsubContainer>
-            <NavLink style={{ textDecoration: "none" }} to="/code">
-              <StyledsubText>Projects</StyledsubText>
-            </NavLink>
-            <NavLink style={{ textDecoration: "none" }} to="/contact">
-              <StyledsubText>Contact</StyledsubText>
-            </NavLink>
-          </StyledsubContainer>
-        </StyledContainer>
-      </React.Fragment>
+      <StyledContainer>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <NavLink style={{ textDecoration: "none" }} to="/">
+            <StyledText>JM</StyledText>
+            <StyledMobileText>Joseph Meli</StyledMobileText>
+          </NavLink>
+          <Div>
+            <StyledName>JOSEPH MELI</StyledName>
+          </Div>
+        </div>
+        <StyledsubContainer>
+          <NavLink style={{ textDecoration: "none" }} to="/code">
+            <StyledsubText>Projects</StyledsubText>
+          </NavLink>
+          <NavLink style={{ textDecoration: "none" }} to="/about">
+            <StyledsubText>About</StyledsubText>
+          </NavLink>
+        </StyledsubContainer>
+      </StyledContainer>
     );
   }
 }

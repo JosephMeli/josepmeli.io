@@ -17,7 +17,7 @@ const Styledlogo = styled.img`
   width: auto;
   padding: 10px;
   &:hover {
-    border-bottom: solid 2px blue;
+    border-bottom: solid 2px #2061c9;
     animation: dropdown 0.2s forwards;
   }
 `;

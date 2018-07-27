@@ -37,9 +37,9 @@ const StyledCard = styled.div`
 `;
 const StyledCardTitle = styled.h4`
   font-weight: bold;
-  color: blue;
+  color: #2061c9;
   &:hover {
-    border-bottom: solid 2px blue;
+    border-bottom: solid 2px #2061c9;
     animation: dropdown 0.2s forwards;
   }
 `;

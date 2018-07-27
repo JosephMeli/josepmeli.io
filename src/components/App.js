@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./Home";
 import Navbar from "./Navbar";
-import Contact from "./Contact";
+import About from "./About";
 import Code from "./Code";
+import NotFound from "./NOT_FOUND";
 
 class App extends React.Component {
   render() {
@@ -15,8 +16,8 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/code" component={Code} />
-            <Route path="/contact" component={Contact} />
-            <Route path="*" render={() => <h1>404 NOT FOUND</h1>} />
+            <Route path="/About" component={About} />
+            <Route path="*" component={NotFound} />
           </Switch>
         </div>
       </Router>
