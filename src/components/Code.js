@@ -2,16 +2,20 @@ import React from "react";
 import styled from "styled-components";
 
 import JavaScript_logo from "../assets/js_logo.png";
+import Shell_logo from "../assets/shell_logo.png";
 
 const StyledView = styled.div`
   background-color: white;
   margin: auto;
   margin-top: 40px;
-  width: 45%;
-  max-width: 500px;
+  width: 65%;
+  max-width: 600px;
   border-radius: 1%;
   border: none;
   animation: 0.5s forwards;
+  @media (max-width: 700px) {
+    width: 75%;
+  }
 `;
 
 const StyledCard = styled.div`
@@ -21,9 +25,10 @@ const StyledCard = styled.div`
   width: 250;
   height: 150;
   margin: 20px;
-  padding: 10px;
+  padding: 15px;
   background: #ffffff;
-  opacity: 0.5;
+  opacity: 1;
+  border-radius: 5px;
   border: 2px solid #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   &:hover {
@@ -32,13 +37,15 @@ const StyledCard = styled.div`
 `;
 const StyledCardTitle = styled.h4`
   font-weight: bold;
-
+  color: blue;
   &:hover {
     border-bottom: solid 2px blue;
     animation: dropdown 0.2s forwards;
   }
 `;
-const StyledDescription = styled.p``;
+const StyledDescription = styled.p`
+  color: #555;
+`;
 
 const Styledlogo = styled.img`
   height: 30px;
@@ -48,6 +55,14 @@ const Styledlogo = styled.img`
 
 const StyledLink = styled.a`
   text-decoration: none;
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
 `;
 
 class Code extends React.Component {
@@ -60,16 +75,19 @@ class Code extends React.Component {
           </StyledLink>
           <Styledlogo src={JavaScript_logo} alt="JavaScript_logo" />
           <StyledDescription>
-            This app is responsible for taking in information with UI forms. It
-            starts with taking the name of the team that is being tested with
-            the task, slot, and attempt. The task attempt value is written as
-            1-1-1 task-slot-attempt. Then from their one can create a
-            configuration ( modal of sensors and layout of quadcopter) by
-            clicking the top add-config button. After that, you can create
-            evaluations by going back to the home page and clicking on the edit
-            button next to the team and task item you made before. There you can
-            fill out the form submit and see the results under the Evaluations
-            tab at the top of the screen.
+            This app enables us to log and report on robot testing data from
+            field research. The application catalogs the data defined by user
+            input and can be exported for further analyzing.
+          </StyledDescription>
+        </StyledCard>
+        <StyledCard>
+          <StyledLink href="https://github.com/NERVEUML/SD-Ripper">
+            <StyledCardTitle>SD-Ripper</StyledCardTitle>
+          </StyledLink>
+          <Styledlogo src={Shell_logo} alt="Shell_logo" />
+          <StyledDescription>
+            This is a script for reading from multiple SD cards at the same
+            time.
           </StyledDescription>
         </StyledCard>
       </StyledView>

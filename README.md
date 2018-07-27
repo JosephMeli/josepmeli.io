@@ -1,3 +1,3 @@
 # Personal Website
 
-see at [http://josephmeli.netlify.com]
+see at [https://www.josephmeli.com]
