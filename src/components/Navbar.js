@@ -21,7 +21,8 @@ const StyledsubContainer = styled.div`
 `;
 const StyledText = styled.h2`
   color: White;
-  background-color: #2061c9;
+  background-color: #68b6e3;
+  padding: 5px;
   letter-spacing: 2px;
   border-radius: 4%;
   @media (max-width: 700px) {
@@ -30,7 +31,7 @@ const StyledText = styled.h2`
 `;
 const StyledMobileText = styled.h3`
   color: White;
-  background-color: #2061c9;
+  background-color: #68b6e3;
 
   letter-spacing: 2px;
   border-radius: 4%;
@@ -50,10 +51,11 @@ const StyledsubText = styled.h3`
   padding-right: 15px;
   color: #555;
   &:hover {
-    border-bottom: solid 2px #2061c9;
+    border-bottom: solid 2px #68b6e3;
   }
 `;
 const StyledName = styled.div`
+  padding-left: 10px;
   color: #555;
   letter-spacing: 3 px;
   @media (max-width: 700px) {
