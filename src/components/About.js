@@ -91,11 +91,6 @@ const SectionContent = styled.section`
 const SubSectionContent = styled.section`
   display: block;
 `;
-const OneLine = styled.div`
-  @media (min-width: 700px) {
-    display: inline !important ;
-  }
-`;
 
 const Item = styled.span`
   margin-bottom: 10px;
@@ -165,6 +160,16 @@ class About extends React.Component {
                   {resumeData.basics.website}
                 </Item>
               </SubSectionContent>
+            </SectionContent>
+            <SectionContent>
+                <StyledH3>Skills</StyledH3> 
+                {resumeData.skills.forEach(function(e){
+                  <Item>{e}</Item>
+                  e.keywords.forEach(function (x){
+                   <Item>{x}</Item>
+                 })
+                })
+              } 
             </SectionContent>
             <Summary>
               <StyledH3>About</StyledH3>

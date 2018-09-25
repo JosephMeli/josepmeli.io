@@ -78,10 +78,13 @@ class Navbar extends Component {
         </div>
         <StyledMobileMenu />
         <StyledsubContainer>
-          <NavLink style={{ textDecoration: "none" }} to="/code">
+          <NavLink style={{ textDecoration: "none" }} to="/Code">
             <StyledsubText>Projects</StyledsubText>
           </NavLink>
-          <NavLink style={{ textDecoration: "none" }} to="/about">
+          <NavLink style={{ textDecoration: "none" }} to="/Blog">
+            <StyledsubText>Blog</StyledsubText>
+          </NavLink>
+          <NavLink style={{ textDecoration: "none" }} to="/About">
             <StyledsubText>About</StyledsubText>
           </NavLink>
         </StyledsubContainer>

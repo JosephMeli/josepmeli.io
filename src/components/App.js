@@ -5,6 +5,7 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import About from "./About";
 import Code from "./Code";
+import Blog from "./Blog";
 import NotFound from "./NOT_FOUND";
 
 class App extends React.Component {
@@ -15,7 +16,8 @@ class App extends React.Component {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/code" component={Code} />
+            <Route path="/Code" component={Code} />
+            <Route path="/Blog" component={Blog} />
             <Route path="/About" component={About} />
             <Route path="*" component={NotFound} />
           </Switch>
