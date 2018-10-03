@@ -27,7 +27,7 @@ export default class NOT_FOUND extends Component {
   render() {
     return (
       <StyledView>
-        <StyledText>404 NOT FOUND </StyledText>
+        <StyledText>404 | NOT FOUND </StyledText>
       </StyledView>
     );
   }

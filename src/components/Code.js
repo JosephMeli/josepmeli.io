@@ -5,7 +5,7 @@ import JavaScript_logo from "../assets/js_logo.png";
 import Shell_logo from "../assets/shell_logo.png";
 
 const StyledView = styled.div`
-  background-color: white;
+
   margin: auto;
   margin-top: 40px;
   width: 65%;
@@ -19,6 +19,7 @@ const StyledView = styled.div`
 `;
 
 const StyledCard = styled.div`
+background:white;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -26,13 +27,12 @@ const StyledCard = styled.div`
   height: 150;
   margin: 20px;
   padding: 15px;
-  background: #ffffff;
   opacity: 1;
   border-radius: 5px;
   border: 2px solid #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   &:hover {
-    transform: scale(1.1);
+    border: 1.5px solid lightblue;
   }
 `;
 const StyledCardTitle = styled.h4`

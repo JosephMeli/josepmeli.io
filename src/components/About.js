@@ -161,16 +161,6 @@ class About extends React.Component {
                 </Item>
               </SubSectionContent>
             </SectionContent>
-            <SectionContent>
-                <StyledH3>Skills</StyledH3> 
-                {resumeData.skills.forEach(function(e){
-                  <Item>{e}</Item>
-                  e.keywords.forEach(function (x){
-                   <Item>{x}</Item>
-                 })
-                })
-              } 
-            </SectionContent>
             <Summary>
               <StyledH3>About</StyledH3>
               <StyledDescription>{resumeData.basics.summary}</StyledDescription>

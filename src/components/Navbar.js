@@ -14,6 +14,14 @@ const StyledContainer = styled.div`
   display: flex;
   flex-wrap: flex;
   justify-content: space-around;
+  background: rgb(17, 44, 204);
+  background: linear-gradient(
+    351deg,
+    rgba(17, 44, 204, 1) 0%,
+    rgba(0, 112, 163, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
 `;
 const StyledsubContainer = styled.div`
   padding-top: 20px;
@@ -49,14 +57,14 @@ const StyledMobileMenu = styled.div`
 const StyledsubText = styled.h3`
   display: inline;
   padding-right: 15px;
-  color: #555;
+  color:white ;
   &:hover {
     border-bottom: solid 2px #68b6e3;
   }
 `;
 const StyledName = styled.div`
   padding-left: 10px;
-  color: #555;
+  color: white;
   letter-spacing: 3 px;
   @media (max-width: 700px) {
     display: none;
@@ -81,9 +89,7 @@ class Navbar extends Component {
           <NavLink style={{ textDecoration: "none" }} to="/Code">
             <StyledsubText>Projects</StyledsubText>
           </NavLink>
-          <NavLink style={{ textDecoration: "none" }} to="/Blog">
-            <StyledsubText>Blog</StyledsubText>
-          </NavLink>
+         
           <NavLink style={{ textDecoration: "none" }} to="/About">
             <StyledsubText>About</StyledsubText>
           </NavLink>
