@@ -1,11 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import JavaScript_logo from "../assets/js_logo.png";
-import Shell_logo from "../assets/shell_logo.png";
+import JavaScript_logo from '../assets/js_logo.png';
+import Shell_logo from '../assets/shell_logo.png';
 
 const StyledView = styled.div`
-
   margin: auto;
   margin-top: 40px;
   width: 65%;
@@ -19,7 +18,7 @@ const StyledView = styled.div`
 `;
 
 const StyledCard = styled.div`
-background:white;
+  background: white;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

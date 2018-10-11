@@ -1,8 +1,8 @@
 //Dependencies
-import React, { Component } from "react";
-import styled, { keyframes } from "styled-components";
-import { NavLink } from "react-router-dom";
-import { fadeIn } from "react-animations";
+import React, { Component } from 'react';
+import styled, { keyframes } from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import { fadeIn } from 'react-animations';
 
 const fader = keyframes`${fadeIn}`;
 
@@ -57,7 +57,7 @@ const StyledMobileMenu = styled.div`
 const StyledsubText = styled.h3`
   display: inline;
   padding-right: 15px;
-  color:white ;
+  color: white;
   &:hover {
     border-bottom: solid 2px #68b6e3;
   }
@@ -75,8 +75,8 @@ class Navbar extends Component {
   render() {
     return (
       <StyledContainer>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <NavLink style={{ textDecoration: "none" }} to="/">
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <NavLink style={{ textDecoration: 'none' }} to="/">
             <StyledText>JM</StyledText>
             <StyledMobileText>Joseph Meli</StyledMobileText>
           </NavLink>
@@ -86,11 +86,11 @@ class Navbar extends Component {
         </div>
         <StyledMobileMenu />
         <StyledsubContainer>
-          <NavLink style={{ textDecoration: "none" }} to="/Code">
+          <NavLink style={{ textDecoration: 'none' }} to="/Code">
             <StyledsubText>Projects</StyledsubText>
           </NavLink>
-         
-          <NavLink style={{ textDecoration: "none" }} to="/About">
+
+          <NavLink style={{ textDecoration: 'none' }} to="/About">
             <StyledsubText>About</StyledsubText>
           </NavLink>
         </StyledsubContainer>

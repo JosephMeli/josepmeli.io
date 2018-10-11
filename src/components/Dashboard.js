@@ -1,6 +1,5 @@
-import React from "react";
-import styled from "styled-components";
-
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledView = styled.div`
   background-color: white;
@@ -15,7 +14,6 @@ const StyledView = styled.div`
     width: 75%;
   }
 `;
-
 
 class Dashboard extends React.Component {
   render() {

@@ -1,10 +1,10 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import { fadeIn } from "react-animations";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 
-import Social from "./Social";
-import Code from "./Code";
-import About from "./About";
+import Social from './Social';
+import Code from './Code';
+import About from './About';
 
 const fader = keyframes`${fadeIn}`;
 
@@ -17,7 +17,6 @@ const StyledContainer = styled.div`
   display: flex;
   flex-wrap: flex;
   justify-content: center;
-  
 `;
 
 const StyledView = styled.div`
@@ -50,7 +49,6 @@ const StyledHeader = styled.h4`
   }
 `;
 
-
 const ImportantText = styled.span`
   font-weight: bold;
   font-style: italic;
@@ -71,7 +69,7 @@ const StyledMobileText = styled.h3`
 
   letter-spacing: 2px;
   border-radius: 4%;
-  padding:4px;
+  padding: 4px;
 
   width: 100%;
   @media (min-width: 700px) {
@@ -97,38 +95,35 @@ const Div = styled.div`
 `;
 
 const Styledhr = styled.hr`
-height: 12px;
-border: 0;
-box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 `;
-
 
 class Home extends React.Component {
   render() {
     return (
       <StyledApp>
-       
-          <StyledContainer>
-            <div style={{ display: "flex", alignItems: "center" }}>
-                <StyledText>JM</StyledText>
-                <StyledMobileText>Joseph Meli</StyledMobileText>
-              <Div>
-                <StyledName>JOSEPH MELI</StyledName>
-              </Div>
-            </div>
-            <StyledMobileMenu />
-          </StyledContainer>
-          <Social />
-          <StyledView className="raised">
+        <StyledContainer>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <StyledText>JM</StyledText>
+            <StyledMobileText>Joseph Meli</StyledMobileText>
+            <Div>
+              <StyledName>JOSEPH MELI</StyledName>
+            </Div>
+          </div>
+          <StyledMobileMenu />
+        </StyledContainer>
+        <Social />
+        <StyledView className="raised">
           <StyledHeader>
-            Southern New Hampshire based <ImportantText>Software</ImportantText>{" "}
+            Southern New Hampshire based <ImportantText>Software</ImportantText>{' '}
             Engineer, <ImportantText>Networking</ImportantText> Professional,
             and <ImportantText>Wellness</ImportantText> Enthusiast with a
             passion for solving problems.
           </StyledHeader>
-     
         </StyledView>
-       
+
         <Styledhr />
         <StyledHeader>Projects</StyledHeader>
         <Code />

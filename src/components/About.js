@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Social from "./Social";
-import { resumeData } from "../resume";
+import Social from './Social';
+import { resumeData } from '../resume';
 
 const StyledView = styled.div`
   background-color: white;
@@ -14,7 +14,7 @@ const StyledView = styled.div`
   border: none;
   background: #f9f9f9;
   font-size: 0.9em;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-bottom: 100px;
   animation: 0.5s forwards;
   @media (max-width: 700px) {
@@ -185,9 +185,8 @@ class About extends React.Component {
               </Item>
               <Item>
                 <Strong>Date of Working</Strong>
-                {resumeData.work.map(a => a.startDate)} -{resumeData.work.map(
-                  a => a.endDate
-                )}
+                {resumeData.work.map(a => a.startDate)} -
+                {resumeData.work.map(a => a.endDate)}
               </Item>
               <br />
               <StyledDescription>

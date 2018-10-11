@@ -1,9 +1,9 @@
 //Dependencies
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 //Assests
-import Github_logo from "../assets/GitHub.png";
-import linkedin_logo from "../assets/linkedIn.png";
+import Github_logo from '../assets/GitHub.png';
+import linkedin_logo from '../assets/linkedIn.png';
 
 const StyledContainer = styled.div`
   padding-top: 15px;
